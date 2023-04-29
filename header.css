@@ -272,38 +272,59 @@ section p{
     }
 }
 
-
-
 #contact-fourm{
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
 }
-
 .contact-fourm{
-    margin: 1rem 0 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 1.5rem
+}
+input, label, textarea{
+    width: 100%;
+    margin: .25rem 0 2rem 0;
+}
+input{
+    height: 2rem;
+}
+input, textarea{
+    border: solid black 3px;
+    border-radius: 10px;
 }
 .fourm-client-name{
     display: flex;
+    justify-content: space-between;
 }
 .form-client-info{
     display: flex;
+    justify-content: space-between;
 }
-input, textarea{
-    margin: .25rem .5rem 2rem .5rem;
-    height: 2rem;
-    border-radius: 10px;
-    border: solid var(--bg-main-o8) 2px;
-    box-shadow: 0 0 2px 2px white;
+.client-fname, .client-lname, .client-phone, .client-email{
+    width: 48%;
 }
-textarea{
-    height: 10rem;
+.contact-fourm button{
+    width: 100%;
 }
 
+@media only screen and (max-width: 350px) {
 
+    .fourm-client-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-client-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .client-fname, .client-lname, .client-phone, .client-email{
+        width: 90%;
+    }
+}
 footer{
-    background-color: red;
+    
     height: 50px;
 }

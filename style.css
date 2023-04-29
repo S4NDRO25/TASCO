@@ -27,15 +27,10 @@
 }
 html{
     scroll-behavior: smooth;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 body{
 
     background-color: var(--bg-main);
-    max-width: 900px;
 }
 h1{
     background: #0800FF;
