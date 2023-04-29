@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>TASCO</h1>
+            <!-- <img src="images/hero_image2.png" alt=""> -->
+            <h3>Airconditioning Refrigeration Electrical</h3>
+            <h6>Servecing Western Australians for 25+ Years</h6>
+        </div>
+        <div class="call-to-action">
+            <div class="box-shadow">
+                <h2>Your Comfort is a Phone Call Away</h2>
+                <button onclick="showModal()" id="jump">Contact Us</button>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <button onclick="closeModal()" class="close-modal">close</button>
+                  <div class="cta-option">
+                    Call Now:<br>0123456789
+                    <a href="tel: 0123456789"><button class="cta-button">Open in Phone</button></a>
+                  </div>
+            
+                  <div class="cta-option">
+                    Email Now:<br>support@gmail.com
+                    <a href="mailto: support@gmail.com"><button class="cta-button">Open in Email</button></a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <div class="services">
+        <h3>-- Our Services --</h3>
+        <div class="service-options">
+            <button onclick="s1()">Airconditioning</button>
+            <button onclick="s2()">Electrical</button>
+        </div>
+    
+        <div id="div1">
+            <div class="img-wrap"><img style="width: 65px; height: 65px;" src="/images/icon_supply-installation.png" alt=""></div>
+            <section>
+                <h4>Supply & Installation</h4>
+                <p>Our team of highly skilled technicians offer a comprehensive supply and installation service, working with you to determine the best and most cost-effective solution for your needs. We only use high-quality materials and equipment, ensuring your system is built to last.</p>
+                <div class="service-buttons">
+                    <button>Read More</button>
+                    <button>Book Now</button>
+                </div>
+            </section>
+            <div class="img-wrap"><img style="width: 65px; height: 65px;" src="/images/icon_maintenance.png" alt=""></div>
+            <section>
+                <h4>Maintenance</h4>
+                <p>We offer a comprehensive maintenance service covers all aspects of your system, including regular cleaning, filter replacement, refrigerant checks, and inspecting electrical connections to ensure your air conditioning or refrigeration system is operating efficiently and effectively, helping to reduce energy consumption and save you money.</p>
+                <div class="service-buttons">
+                    <button>Read More</button>
+                    <button>Book Now</button>
+                </div>
+            </section>
+            <div class="img-wrap"><img style="width: 65px; height: 65px;" src="/images/icon_service-repair.png" alt=""></div>
+            <section>
+                <h4>Maintenance</h4>
+                <p>We offer a comprehensive maintenance service covers all aspects of your system, including regular cleaning, filter replacement, refrigerant checks, and inspecting electrical connections to ensure your air conditioning or refrigeration system is operating efficiently and effectively, helping to reduce energy consumption and save you money.</p>
+                <div class="service-buttons">
+                    <button>Read More</button>
+                    <button>Book Now</button>
+                </div>
+            </section>
+            <div class="button-container">
+                <a onclick="s2()" href="#jump"><button class="jump1">View Electrical Services</button></a>
+            </div>
+        </div>	
+        <div id="div2">
+            <div class="img-wrap"><img style="width: 65px; height: 65px;" src="/images/icon_application-installation.png" alt=""></div>
+            <section>
+                <h4>Application Installation</h4>
+                <p>Our team of highly skilled technicians have years of experience in power and appliance installation. We offer a comprehensive installation service for a wide range of electrical equipment. We work efficiently to minimize any disruption to your home or business, and we guarantee that all installations will comply with the latest safety standards and regulations.</p>
+                <div class="service-buttons">
+                    <button>Read More</button>
+                    <button>Book Now</button>
+                </div>
+            </section>
+            <div class="img-wrap"><img style="width: 65px; height: 65px;" src="/images/icon_media-data.png" alt=""></div>
+            <section>
+                <h4>Media & Data</h4>
+                <p>Our team of expert technicians are experienced in media and data installation and can provide you with the latest technology for your home or business. We offer a range of media and data solutions, including home theatre installation, TV and antenna installation, structured cabling, and much more.</p>
+                <div class="service-buttons">
+                    <button>Read More</button>
+                    <button>Book Now</button>
+                </div>
+            </section>
+            <div class="img-wrap"><img style="width: 65px; height: 65px;" src="/images/icon_maintenance-repair.png" alt=""></div>
+            <section>
+                <h4>Maintenance & Repair</h4>
+                <p>Regular maintenance and repair are essential to keep your electrical system running smoothly and safely. We offer a comprehensive maintenance and repair service that includes everything from minor repairs to major system upgrades. We use the latest equipment to diagnose and repair a wide range of issues. We also offer emergency repair services for urgent issues.</p>
+                <div class="service-buttons">
+                    <button>Read More</button>
+                    <button>Book Now</button>
+                </div>
+            </section>
+            <div class="button-container">
+                <a onclick="s1()" href="#jump"><button class="jump2">View Airconditioning Services</button></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <h3>Contact Us</h3>
+    <form class="contact-fourm" action="https://mail.google.com/tasocrefrigeration@gmail.com" method="POST">
+        
+        <div class="fourm-client-name">
+            <div class="client-fname">
+                <label for="firstName" class="form-label"><h4>First Name</h4></label>
+                <input type="text" class="form-control" name="First Name" id="firstName" placeholder="Enter First Name..." required>
+            </div>
+
+            <div class="client-lname">
+                <label for="lastName" class="form-label"><h4>Last Name</h4></label>
+                <input type="text" class="form-control" name="Last Name" id="lastName" placeholder="Enter Last Name...">
+            </div>
+        </div>
+
+        <div class="form-client-info">
+            <div class="client-phone">
+                <label for="phoneNumber" class="form-label"><h4>Phone Number</h4></label>
+                <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="0123456789">
+            </div>
+            
+            <div class="client-email">
+                <label for="emailInfo" class="form-label"><h4>E-mail Address</h4></label>
+                <input type="email" class="form-control" name="e-mail" id="emailInfo" placeholder="something@gmail.com" required>
+            </div>
+        </div>
+
+        <div class="form-client-address">
+            <label for="houseAddress" class="form-label"><h4>House Address</h4></label>
+            <input type="text" class="form-control" name="Address" id="houseAddress" placeholder="something dr 4">
+        </div>
+
+        <div class="form-client-job">
+            <h4>Inquired Services</h4>
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <h4>Job Description</h4>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+        </div>
+
+        <button type="submit"> Submit</button>
+    </form>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
