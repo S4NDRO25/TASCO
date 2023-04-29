@@ -1,0 +1,293 @@
+.hero{
+    background-image: url(images/hero_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero h1{
+    width: max-content;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    top: 25%;
+    margin-inline: auto;
+}
+.hero h3{
+    color: black;
+}
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.call-to-action .box-shadow{
+    background-color: var(--bg-accent-d);
+
+    box-shadow: 0 0 .5rem .5rem rgba(255, 255, 255, 0.569);
+    border-radius: 25px;
+
+    margin: 2rem 1.5rem;
+    padding: 2rem;
+}
+
+.call-to-action .box-shadow button{
+    margin: 1.3rem 0 0 0;
+    width: 100%;
+}
+
+
+
+
+
+.modal{
+    background-color: rgba(0,0,0,0.4);
+  
+    display: none;
+    position: fixed; 
+    overflow: auto;
+  
+    opacity: 1;
+    visibility: visible;
+  
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+  }
+  
+  .modal-content{
+      background: #313131;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+      
+      position: fixed;
+    text-align: center;
+      
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      width: 90vw;
+      max-width: 700px;
+      border-radius: 25px 25px 0 0;
+  
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+  .cta-option{
+      color: white;
+      background-color: var(--bg);
+      border: 2.5px solid #313131;
+      box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.4);
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      
+      padding: 1rem 0;
+      margin: 1.5rem 1rem;
+      border-radius: 15px;
+  
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  .cta-option .cta-button{
+    margin: 1rem 0;
+  }
+  .close-modal{
+    padding: .5rem;
+    border-radius: 25px 25px 0 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: none;
+  }
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services h3{
+    margin: 2rem 0 0 0;
+}
+.service-options{
+    margin: 0 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-options button{
+    margin: 1.3rem .5rem 0 0;
+    width: 100%;
+    border-radius: 25px 0px 0 0;
+    box-shadow: 0 7px 2px 3px black, 0 7px 3px 5px hsl(216, 100%, 74%);
+}
+.service-options button:last-child{
+    margin: 1.3rem 0 0 .5rem;
+    border-radius: 0px 25px 0 0;
+    box-shadow: 0 7px 2px 3px black, 0 7px 3px 5px hsl(60, 100%, 50%);
+}
+.service-options button:hover{
+    transform: translateY(4px);
+    box-shadow: 0 4px 2px 3px black, 0 4px 2px 5px white;
+}
+
+.service-options button:active{
+    transform: translateY(6px);
+    box-shadow: 0 2px 0px 2px black, 0 2px 2px 5px white;
+}
+#div1{
+    background-color: var(--bg-accent-d);
+    border-radius: 0 0 15px 15px;
+    padding: 1rem;
+    display: block;
+}
+#div2{
+    background-color: var(--bg-accent-d);
+    border-radius: 0 0 15px 15px;
+    padding: 1rem;
+    display: none;
+}
+section{
+    margin: .5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 15px;
+    padding: 1rem;
+}
+#div1 section{
+    background-color: var(--bg-main-o8);
+    box-shadow: 0px 0px 4px 4px hsl(216, 100%, 74%);
+}
+#div2 section{
+    background-color: var(--bg-main-o8);
+    box-shadow: 0px 0px 4px 4px hsl(60, 100%, 50%);
+}
+section h4{
+    margin: 2rem 0 0 0;
+}
+section p{
+    margin: 1rem 0;
+}
+.service-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+.service-buttons button{
+    width: 40%;
+    font-size: calc(var(--fs-b)/1.2);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-container button{
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+.jump1{
+    display: block;
+}
+.jump2{
+    display: none;
+}
+#div1 img{
+    margin: 0 auto 1rem auto;
+    background-color: white;
+    box-shadow: 0px 0px 0px 4px black;
+    border-radius: 20px;
+    padding: .3rem;
+}
+.img-wrap{
+    height: 2rem;
+}
+.img-wrap img{
+    position: relative;
+    top: -.25rem;
+    margin-inline: auto;
+    background-color: white;
+    box-shadow: 0px 0px 0px 4px black;
+    border-radius: 20px;
+    padding: .3rem;
+}
+@media only screen and (max-width: 300px) {
+    .service-buttons{
+        flex-direction: column;
+    }
+    .service-buttons button{
+        width: 100%;
+    }
+    .service-buttons button:last-child{
+        margin: 1.5rem 0 0rem 0;
+    }
+}
+
+
+
+
+
+.contact-fourm{
+    margin: 1rem 0 0 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-fourm * > div{
+    margin: 1rem;
+}
+
+.fourm-client-name{
+    display: flex;
+}
+.form-client-info{
+    display: flex;
+}
