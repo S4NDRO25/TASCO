@@ -217,10 +217,14 @@ section p{
     align-items: center;
     margin: 0 0 1rem 0;
 }
-.service-buttons button{
+.service-buttons a{
     width: 40%;
+}
+.service-buttons a button{
+    width: 100%;
     font-size: calc(var(--fs-b)/1.2);
 }
+
 .button-container{
     display: flex;
     justify-content: center;
@@ -270,7 +274,9 @@ section p{
 
 
 
-
+#contact-fourm{
+    margin: 2rem 0 0 0;
+}
 
 .contact-fourm{
     margin: 1rem 0 0 0;
