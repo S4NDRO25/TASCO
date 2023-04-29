@@ -233,7 +233,7 @@ section p{
 
 .button-container button{
     width: 100%;
-    margin: 0 0 1rem 0;
+    margin: 1.5rem 0 1rem 0;
 }
 .jump1{
     display: block;
@@ -279,21 +279,31 @@ section p{
 }
 
 .contact-fourm{
-    margin: 1rem 0 0 0;
-    width: 100%;
-
+    margin: 1rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.contact-fourm * > div{
-    margin: 1rem;
-}
-
 .fourm-client-name{
     display: flex;
 }
 .form-client-info{
     display: flex;
+}
+input, textarea{
+    margin: .25rem .5rem 2rem .5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: solid var(--bg-main-o8) 2px;
+    box-shadow: 0 0 2px 2px white;
+}
+textarea{
+    height: 10rem;
+}
+
+
+footer{
+    background-color: red;
+    height: 50px;
 }
