@@ -15,7 +15,7 @@
         <div class="hero">
             <h1>TASCO</h1>
             <!-- <img src="images/hero_image2.png" alt=""> -->
-            <h3>Airconditioning Refrigeration Electrical</h3>
+            <h3><span id="blue">Airconditioning</span> <span id="red">Refrigeration</span> <br><br> <span id="yellow">Electrical</span></h3>
             <h6>Servecing Western Australians for 25+ Years</h6>
         </div>
         <div class="call-to-action">
@@ -115,43 +115,30 @@
     </div>
 
     <h3 id="contact-fourm">-- Contact Us --</h3>
+    </div>
     <form class="contact-fourm" action="https://formsubmit.co/070998c8a5c2fea142cba6a2f6ab62f1" method="POST">
 
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://s4ndro25.github.io/TASCO/thanks.html">
         
-        <div class="fourm-client-name">
-            <div class="client-fname">
-                <label for="firstName" class="form-label"><h4>First Name</h4></label>
-                <input type="text" class="form-control" name="First Name" id="firstName" placeholder="Enter First Name..." required>
+       <h4>Your prefered form on contact</h4>
+        
+        <div class="contact-option">
+            <div class="contact-option-email">
+                <label for="">Email</label>
+                <input type="radio" name="radio" id="radio1" checked>
             </div>
-
-            <div class="client-lname">
-                <label for="lastName" class="form-label"><h4>Last Name</h4></label>
-                <input type="text" class="form-control" name="Last Name" id="lastName" placeholder="Enter Last Name...">
-            </div>
-        </div>
-
-        <div class="form-client-info">
-            <div class="client-phone">
-                <label for="phoneNumber" class="form-label"><h4>Phone Number</h4></label>
-                <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="0123456789">
-            </div>
-            
-            <div class="client-email">
-                <label for="emailInfo" class="form-label"><h4>E-mail Address</h4></label>
-                <input type="email" class="form-control" name="e-mail" id="emailInfo" placeholder="something@gmail.com" required>
+            <div class="contact-option-phone">
+                <label for="">Phone</label>
+                <input type="radio" name="radio" id="radio2">
             </div>
         </div>
-
-        <label for="houseAddress" class="form-label"><h4>House Address</h4></label>
-        <input type="text" class="form-control" name="Address" id="houseAddress" placeholder="something dr 4">
-
-
-        <label for="JobDescription" class="form-label"><h4>Job Description</h4></label>
-        <textarea name="job-description" id="jobDescription" cols="50" rows="10"></textarea>
-
-        <button type="submit"> Submit</button>
+        <input type="text" placeholder="Enter Your Name..." required>
+        <input type="email" name="input1" id="input1" class="input1 show" placeholder="Enter E-mail Address...">
+        <input type="text" name="input2" id="input2" class="input2" placeholder="Enter Phone Number...">
+        <input type="text" placeholder="Enter Post Code...">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button type="submit">SUBMIT</button>
     </form>
     <footer>
         

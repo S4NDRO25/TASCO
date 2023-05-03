@@ -31,3 +31,34 @@ function showModal() {
       modal.style.display = "none";
     }
   }
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var radio1 = document.getElementById('radio1');
+    var radio2 = document.getElementById('radio2');
+    var input1 = document.getElementById('input1');
+    var input2 = document.getElementById('input2');
+  
+    // Set input1 as required by default
+    input1.required = true;
+  
+    // Add event listeners to radio buttons
+    radio1.addEventListener('change', function() {
+      if (this.checked) {
+        input1.required = true;
+        input2.required = false;
+        input2.style.display = "none";
+        input1.style.display = "block";
+      }
+    });
+  
+    radio2.addEventListener('change', function() {
+      if (this.checked) {
+        input1.required = false;
+        input2.required = true;
+        input1.style.display = "none";
+        input2.style.display = "block";
+      }
+    });
+
+  });
+  

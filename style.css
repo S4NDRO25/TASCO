@@ -32,6 +32,31 @@ body{
 
     background-color: var(--bg-main);
 }
+#blue{
+    /* background-color: black; */
+    /* border-radius: 10px; */
+    padding: .5rem .25rem;
+    /* color: hsl(216, 100%, 74%); */
+    border-bottom: solid hsl(216, 100%, 74%) 3px;
+    border-top: solid hsl(216, 100%, 74%) 3px;
+}
+#red{
+    /* background-color: black; */
+    /* border-radius: 10px; */
+    padding: .5rem .25rem;
+    /* color: hsl(0, 100%, 50%); */
+    background-origin: padding-box;
+    border-bottom: solid hsl(0, 100%, 50%) 3px;
+    border-top: solid hsl(0, 100%, 50%) 3px;
+}
+#yellow{
+    /* background-color: black; */
+    /* border-radius: 10px; */
+    padding: .5rem .25rem;
+    /* color: hsl(60, 100%, 50%); */
+    border-bottom: solid hsl(60, 100%, 50%) 3px;
+    border-top: solid hsl(60, 100%, 50%) 3px;
+}
 h1{
     background: #0800FF;
     background: -webkit-radial-gradient(50% 50% at 50% 50%, #0800FF 90%, #FFFFFF 100%, #FF0000 0%);
