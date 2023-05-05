@@ -317,7 +317,7 @@ input{
 input, textarea{
     border: solid black 3px;
     border-radius: 10px;
-    text-align: start;
+    /* text-align: start; */
 }
 .contact-fourm button{
     width: 100%;
