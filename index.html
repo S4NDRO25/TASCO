@@ -125,19 +125,24 @@
         
         <div class="contact-option">
             <div class="contact-option-email">
-                <label for="">Email</label>
+                <label for="radio1"><img src="images/email-icon.png" style="height: 40px; border-radius: 25px;" alt="Email"></label>
                 <input type="radio" name="radio" id="radio1" checked>
             </div>
             <div class="contact-option-phone">
-                <label for="">Phone</label>
+                <label for="radio2"><img src="images/phone-icon.png" style="height: 40px; border-radius: 25px;" alt="Phone"></label>
                 <input type="radio" name="radio" id="radio2">
             </div>
         </div>
-        <input type="text" placeholder="Enter Your Name..." required>
+        <label for="name"><h4>Name</h4></label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name..." required>
+        <label for="input1"><h4 id="lbl1">E-mail</h4></label>
         <input type="email" name="input1" id="input1" class="input1 show" placeholder="Enter E-mail Address...">
+        <label for="input2"><h4 id="lbl2">Phone</h4></label>
         <input type="text" name="input2" id="input2" class="input2" placeholder="Enter Phone Number...">
-        <input type="text" placeholder="Enter Post Code...">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <label for=""><h4>Post Code</h4></label>
+        <input type="text" name="post" id="post" placeholder="Enter Post Code...">
+        <label for="job"><h4>Job Description</h4></label>
+        <textarea name="job" id="job" cols="30" rows="10"></textarea>
         <button type="submit">SUBMIT</button>
     </form>
     <footer>

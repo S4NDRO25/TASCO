@@ -279,12 +279,28 @@ section p{
 .contact-option{
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    color: black;
 }
 .contact-option > div{
     display: flex;
-    
 }
+.contact-option-phone, .contact-option-email{
+    padding: .5rem 0;
+    margin: 1rem;
+    border: solid black 3px;
+    border-radius: 25px;
+    width: 30%;
+    background-color: white;
+}
+.contact-option-phone label, .contact-option-email label{
+    margin: 0;
+}
+input, #radio1, #radio2{
+    margin: 0;
+}
+
+
+
 .contact-fourm{
     margin: 0 0 2rem 0;
     padding: 0 1.5rem 1.5rem 1.5rem
@@ -313,6 +329,13 @@ input, textarea{
     display: none;
 }
 
+#lbl1{
+    display: block;
+}
+
+#lbl2{
+    display: none;
+}
 
 
 footer{

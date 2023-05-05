@@ -37,9 +37,12 @@ function showModal() {
     var radio2 = document.getElementById('radio2');
     var input1 = document.getElementById('input1');
     var input2 = document.getElementById('input2');
+    var lbl1 = document.getElementById('lbl1');
+    var lbl2 = document.getElementById('lbl2');
   
     // Set input1 as required by default
     input1.required = true;
+    lbl2.style.display = "none";
   
     // Add event listeners to radio buttons
     radio1.addEventListener('change', function() {
@@ -47,7 +50,9 @@ function showModal() {
         input1.required = true;
         input2.required = false;
         input2.style.display = "none";
+        lbl2.style.display = "none";
         input1.style.display = "block";
+        lbl1.style.display = "block";
       }
     });
   
@@ -56,7 +61,9 @@ function showModal() {
         input1.required = false;
         input2.required = true;
         input1.style.display = "none";
+        lbl1.style.display = "none";
         input2.style.display = "block";
+        lbl2.style.display = "block";
       }
     });
 
