@@ -273,7 +273,7 @@ section p{
 }
 
 #contact-fourm{
-    margin: 3rem 0 1rem 0;
+    margin: 3rem 0 1.5rem 0;
 }
 
 .contact-option{
@@ -295,10 +295,12 @@ section p{
 .contact-option-phone label, .contact-option-email label{
     margin: 0;
 }
+.contact-option-phone input, .contact-option-email input{
+    display: none;
+}
 input, #radio1, #radio2{
     margin: 0;
 }
-
 
 
 .contact-fourm{

@@ -18,19 +18,20 @@ function s2() {
 function showModal() {
     document.querySelector(".modal").style.display = "block";
   }
-  function closeModal() {
-    document.querySelector(".modal").style.display = "none";
-  }
+function closeModal() {
+  document.querySelector(".modal").style.display = "none";
+}
   
-  window.addEventListener("click", hideModal);
-  window.addEventListener("touchend", hideModal);
-  
-  function hideModal(event) {
-    var modal = document.querySelector(".modal");
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+window.addEventListener("click", hideModal);
+window.addEventListener("touchend", hideModal);
+
+function hideModal(event) {
+  var modal = document.querySelector(".modal");
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
+}
+
 
   document.addEventListener("DOMContentLoaded", function(event) {
     var radio1 = document.getElementById('radio1');
@@ -39,10 +40,13 @@ function showModal() {
     var input2 = document.getElementById('input2');
     var lbl1 = document.getElementById('lbl1');
     var lbl2 = document.getElementById('lbl2');
+    var bg1 = document.querySelector('.contact-option-email');
+    var bg2 = document.querySelector('.contact-option-phone');
   
     // Set input1 as required by default
     input1.required = true;
     lbl2.style.display = "none";
+    bg1.style.backgroundColor = "blue";
   
     // Add event listeners to radio buttons
     radio1.addEventListener('change', function() {
@@ -53,6 +57,9 @@ function showModal() {
         lbl2.style.display = "none";
         input1.style.display = "block";
         lbl1.style.display = "block";
+        bg1.style.backgroundColor = "blue";
+        bg2.style.backgroundColor = "white";
+
       }
     });
   
@@ -64,6 +71,8 @@ function showModal() {
         lbl1.style.display = "none";
         input2.style.display = "block";
         lbl2.style.display = "block";
+        bg1.style.backgroundColor = "white";
+        bg2.style.backgroundColor = "blue";
       }
     });
 
