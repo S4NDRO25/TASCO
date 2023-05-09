@@ -32,7 +32,7 @@
     box-shadow: 0 0 .5rem .5rem rgba(255, 255, 255, 0.569);
     border-radius: 25px;
 
-    margin: 2rem 1.5rem;
+    margin: min(5vh,10vw) 1.5rem;
     padding: 2rem;
 }
 
@@ -241,13 +241,6 @@ section p{
 .jump2{
     display: none;
 }
-#div1 img{
-    margin: 0 auto 1rem auto;
-    background-color: white;
-    box-shadow: 0px 0px 0px 4px black;
-    border-radius: 20px;
-    padding: .3rem;
-}
 .img-wrap{
     height: 2rem;
 }
@@ -269,6 +262,49 @@ section p{
     }
     .service-buttons button:last-child{
         margin: 1.5rem 0 0rem 0;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .services{
+        display: flex;
+        margin-inline: auto;
+        max-width: 2000px;
+    }
+
+    #div1{
+        display: block;
+        border-radius: 25px 0 0 25px;
+    }
+    #div2{
+        display: block;
+        border-radius: 0 25px 25px 0;
+    }
+    .button-container a{
+        display: none;
+    }
+    section{
+        min-height: calc(150vh/3);
+        justify-content: center;
+    }
+    section h4{
+        flex: 1;
+        text-decoration: underline;
+    }
+    section p{
+        flex: 1;
+        align-items: flex-start;
+    }
+    section .service-buttons{
+        flex: 1;
+    }
+    .img-wrap img{
+        /* margin: 1rem 0 0 0; */
+        margin-inline: auto;
+        background-color: white;
+        box-shadow: 0px 0px 0px 4px black;
+        border-radius: 20px;
+        padding: .3rem;
     }
 }
 
@@ -305,7 +341,9 @@ input, #radio1, #radio2{
 
 .contact-fourm{
     margin: 0 0 2rem 0;
-    padding: 0 1.5rem 1.5rem 1.5rem
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    max-width: 1000px;
+    margin-inline: auto;
 }
 input, label, textarea{
     width: 100%;
