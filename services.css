@@ -74,6 +74,7 @@ section{
     border-radius: 15px;
 }
 section h4{
+    text-decoration: underline 3px;
     margin: 0 0 1rem 0;
 }
 section .button-container{
@@ -120,8 +121,9 @@ section .button-container{
         gap: 1rem;
         margin: 0 0 1.5rem 0;
         padding: 3rem 0 1rem 0;
-        max-width: 600px;
-        min-height: 700px;
+        max-width: 650px;
+        max-height: 400px;
+        min-height: 400px;
         margin-inline:auto;
     }
     section h4{
@@ -129,17 +131,23 @@ section .button-container{
         flex-direction: inherit;
         justify-content: flex-end;
         flex: .5;
+        margin: 0;
     }
     section p{
         display: flex;
         flex: 2.5;
         justify-content: center;
-        align-items: center;
-        min-height: 80%;
-        padding: 1rem 2rem;
+        /* align-items: center; */
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        padding: 0 2rem;
     }
     section .button-container{
+        /* display: none; */
         flex: 0;
         padding: 0 0 1rem 0;
+        margin: 0;
+    }
+    section .button-container button{
+        height: 3.5rem;
     }
 }
