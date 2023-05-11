@@ -123,7 +123,6 @@ const airconditioningButton = document.getElementById('Airconditioning-Service')
 const electricalButton = document.getElementById('Electrical-service');
 const service1 = document.getElementById('service1');
 const service2 = document.getElementById('service2');
-
 const screenWidth = window.innerWidth;
 
 if (screenWidth >= 1000) {
@@ -134,7 +133,7 @@ if (screenWidth >= 1000) {
   electricalButton.disabled = true;
 }
 
-let lastPressedService = null;
+let lastPressedService = service1;
 
 airconditioningButton.addEventListener('click', () => {
   if (screenWidth < 1000) {
