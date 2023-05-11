@@ -104,13 +104,13 @@ section .button-container{
     #service1{
         display: block;
         
-        width: 100%;
+        flex: 1;
         padding: 1rem;
     }
     #service2{
         display: block;
 
-        width: 100%;
+        flex: 1;
         padding: 1rem;
     }
     section{
@@ -120,6 +120,7 @@ section .button-container{
         margin: 0 0 1.5rem 0;
         padding: 3rem 0 1rem 0;
         max-width: 600px;
+        min-height: 700px;
         margin-inline:auto;
     }
     section h4{
@@ -133,8 +134,8 @@ section .button-container{
         flex: 2.5;
         justify-content: center;
         align-items: center;
-        min-height: 400px;
-        padding: 1rem;
+        min-height: 80%;
+        padding: 1rem 2rem;
     }
     section .button-container{
         flex: 0;
