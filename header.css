@@ -1,19 +1,39 @@
 header{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   max-height: min(100%,80vh);
+
 }
+
+
 
 .hero{
   background-image: url(images/hero_background.png);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   display: inherit;
   flex-direction: inherit;
-  height: min(60%, 60vh);
+  max-height: min(60%, 60vh);
   min-height: 400px;
+  width: 100%;
+}
+@media screen and (min-width: 700px) and (min-height: 800px), (min-width: 1000px) {
+  header{
+    background-image: url(images/hero_background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 1600px auto;
+  }
+  
+
+  .hero{
+    background-image: none;
+  }
+
 }
 .hero h1{
   display: inherit;
@@ -31,6 +51,8 @@ header{
   flex: 0;
 }
 .cta-container{
+  background-color: var(--bg-main-o8);
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   margin: 2.5rem 1.5rem;
@@ -72,3 +94,105 @@ header{
   padding: 0;
 }
 
+
+
+#stripes{
+  z-index: -1;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  transform-origin: 0;
+  transform: skewY(-12deg);
+  background: -webkit-linear-gradient(300deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+  background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+  
+  }
+  
+  #stripes, #stripes span{
+    position: absolute;
+  }
+  
+  #stripes span{
+    height: 40px;
+  }
+  
+  #stripes :nth-child(1){
+    width: 50%;
+    left: 50%;
+    top:40px;
+    background:#4c29ff;
+  }
+  
+  #stripes :nth-child(2){
+    width: 14%;
+    right: 0;
+    bottom:40px;
+    background: #2be7ff;
+  }
+  
+  #stripes :nth-child(3){
+    width: 25%;
+    bottom: 0;
+    right: 0;
+    background: #a1ffc8;
+  }
+  
+  /* @media (min-width:670px){
+    #stripes span{
+      height:150px;
+    }
+    #stripes :nth-child(1){
+      top: 0;
+    }
+    #stripes :nth-child(2){
+      width: 16.66667%;
+      top: 300px;
+      bottom: auto;
+      background: #0dcfff;
+    }
+    #stripes :nth-child(3){
+      width: 33.33333%;
+      right: auto;
+      background: #11bdff;
+    }
+  }
+  
+  @media (min-width: 880px){
+    #stripes span{
+      height: 190px;
+    }
+  
+    #stripes :nth-child(1){
+      width: 33.33333%;
+      left: -16.66666%;
+      background: #53f;
+    }
+  
+    #stripes :nth-child(2){
+      width: 33.33333%;
+      top: 0;
+      left: 16.66666%;
+      right: auto;
+      background: #4553ff;
+    }
+  
+    #stripes :nth-child(3){
+      width: 33.33333%;
+      left: 49.99999%;
+      bottom: auto;
+      background: #4f40ff;
+    }
+  
+    #stripes :nth-child(4){
+      width: 33.33333%;
+      top: 380px;
+      right: -16.66666%;
+      background: #25ddf5;
+    }
+  
+    #stripes :nth-child(5){
+      width: 33.33333%;
+      bottom: 0;
+      background: #1fa2ff;
+    }
+  } */
