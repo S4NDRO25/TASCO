@@ -17,7 +17,7 @@
     --fs-h4: clamp(calc(var(--base)/1.4), calc(var(--base-vw)*1.5), calc(var(--base)*1));
     --fs-h5: clamp(calc(var(--base)/1.5), calc(var(--base-vw)*2), calc(var(--base)*0.5));
     --fs-h6: clamp(calc(var(--base)/3), calc(var(--base-vw)*1), calc(var(--base)/1));
-    --fs-p: clamp(calc(var(--base)/1.7), calc(var(--base-vw)*1.5), calc(var(--base)*1));
+    --fs-p: clamp(calc(var(--base)/1.9), calc(var(--base-vw)*1.35), calc(var(--base)*.9));
     --fs-b: clamp(calc(var(--base)/1.4), calc(var(--base-vw)*2), calc(var(--base)*1.5));
 }
 *{
