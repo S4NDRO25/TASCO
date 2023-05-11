@@ -130,7 +130,6 @@ airconditioningButton.style.backgroundColor = "hsl(216, 91%, 82%)";
 if (screenWidth >= 1000) {
   service1.style.display = 'block';
   service2.style.display = 'block';
-
   airconditioningButton.disabled = true;
   electricalButton.disabled = true;
 }
@@ -164,6 +163,9 @@ window.addEventListener('resize', () => {
     service1.style.display = 'block';
     service2.style.display = 'block';
 
+    airconditioningButton.style.backgroundColor = "hsl(216, 91%, 82%)";
+    electricalButton.style.backgroundColor = "hsl(60, 93%, 61%)";
+
     airconditioningButton.disabled = true;
     electricalButton.disabled = true;
   } else {
@@ -173,9 +175,13 @@ window.addEventListener('resize', () => {
     if (lastPressedService === service1) {
       service1.style.display = 'block';
       service2.style.display = 'none';
+      airconditioningButton.style.backgroundColor = "hsl(216, 91%, 82%)";
+      electricalButton.style.backgroundColor = "white";
     } else if (lastPressedService === service2) {
       service1.style.display = 'none';
       service2.style.display = 'block';
+      electricalButton.style.backgroundColor = "hsl(60, 93%, 61%)";
+      airconditioningButton.style.backgroundColor = "white";
     }
   }
 });

@@ -115,6 +115,7 @@ a button{
     font-size: calc(var(--fs-b)/1.2);
 }
 button{
+    color: black;
     border: solid black 1px;
     background-color: white;
     box-shadow: 0 7px 2px 3px black, 0 7px 3px 5px white;

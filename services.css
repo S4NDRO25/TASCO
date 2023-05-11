@@ -32,6 +32,7 @@
 .service-selector .button-container button:active{
     transform: translateY(6px);
     box-shadow: 0 2px 0px 2px black, 0 2px 2px 5px hsl(216, 100%, 74%);
+
 }
 .service-selector .button-container button:last-child:active{
     transform: translateY(6px);
