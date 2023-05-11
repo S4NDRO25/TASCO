@@ -1,0 +1,25 @@
+footer{
+    border-top: dashed lightgray 3px;
+    margin: 3rem 0 0 0;
+    padding: 2.5rem;
+    color: white;
+}
+.links-container{
+    display: flex;
+}
+.licenses{
+    /* text-align: start; */
+    flex: 1;
+}
+.sections{
+    flex: 1;
+}
+.business-info{
+    flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .links-container{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,64 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 1000px;
+
+}
+.contact-container h3{
+    margin: 3.5rem 0 .5rem 0;
+}
+.contact-container a{
+    margin: 0 0 .5rem 0;
+}
+.contact-container h5{
+    color: rgb(135, 135, 135);
+}
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 0 0 1rem 0;
+    height: 2rem;
+    width: 100%;
+}
+label h4{
+    margin: 0 0 .25rem 0;
+}
+textarea{
+    width: 100%;
+}
+
+.contact-selector{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+}
+.contact-selector > *{
+    padding: .5rem 0;
+    margin: 1rem;
+    border: solid black 3px;
+    border-radius: 25px;
+    width: 30%;
+    background-color: white;
+}
+.contact-selector label{
+    margin: 1rem 0;
+    height: clamp(2rem, 5vh, 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.contact-selector input{
+    display: none;
+}
+
+form button{
+    margin: 1rem 0 0 0;
+    margin-inline: auto;
+}
+
