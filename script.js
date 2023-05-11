@@ -125,6 +125,8 @@ const service1 = document.getElementById('service1');
 const service2 = document.getElementById('service2');
 const screenWidth = window.innerWidth;
 
+airconditioningButton.style.backgroundColor = "hsl(216, 91%, 82%)";
+
 if (screenWidth >= 1000) {
   service1.style.display = 'block';
   service2.style.display = 'block';
@@ -139,6 +141,8 @@ airconditioningButton.addEventListener('click', () => {
   if (screenWidth < 1000) {
     service1.style.display = 'block';
     service2.style.display = 'none';
+    electricalButton.style.backgroundColor = "white";
+    airconditioningButton.style.backgroundColor = "hsl(216, 91%, 82%)";
     lastPressedService = service1;
   }
 });
@@ -147,6 +151,8 @@ electricalButton.addEventListener('click', () => {
   if (screenWidth < 1000) {
     service1.style.display = 'none';
     service2.style.display = 'block';
+    electricalButton.style.backgroundColor = "hsl(60, 93%, 61%)";
+    airconditioningButton.style.backgroundColor = "white";
     lastPressedService = service2;
   }
 });
