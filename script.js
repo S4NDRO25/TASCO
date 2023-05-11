@@ -130,6 +130,8 @@ airconditioningButton.style.backgroundColor = "hsl(216, 91%, 82%)";
 if (screenWidth >= 1000) {
   service1.style.display = 'block';
   service2.style.display = 'block';
+  airconditioningButton.style.backgroundColor = "hsl(216, 91%, 82%)";
+  electricalButton.style.backgroundColor = "hsl(60, 93%, 61%)";
   airconditioningButton.disabled = true;
   electricalButton.disabled = true;
 }
